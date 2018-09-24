@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rubik's Cube Solver</title>
+    
+    {% load static %}
+    <link rel="stylesheet" href="{% static "cube_solver_app/css/style.css" %}" type="text/css"/>
+</head>
+
+<body>
+    <h1>Rubik's Cube Solver</h1>
+    <p id="instruction">Use colors from bottom row to draw layout of your cube, then click "solve".</p>
+
+    <table>
+        <tr>
+            <td class="face">
+                <div class="sticker" id="0_0"></div>
+                <div class="sticker" id="0_1"></div>
+                <div class="sticker" id="0_2"></div>
+                                
+                <div class="sticker" id="1_0"></div>
+                <div class="sticker" id="1_1"></div>
+                <div class="sticker" id="1_2"></div>
+                
+                <div class="sticker" id="2_0"></div>
+                <div class="sticker" id="2_1"></div>
+                <div class="sticker" id="2_2"></div>
+            </td>
+        </tr>
+        <tr>
+            <td class="face">
+                <div class="sticker" id="3_0"></div>
+                <div class="sticker" id="3_1"></div>
+                <div class="sticker" id="3_2"></div>
+                                
+                <div class="sticker" id="4_0"></div>
+                <div class="sticker" id="4_1"></div>
+                <div class="sticker" id="4_2"></div>
+                
+                <div class="sticker" id="5_0"></div>
+                <div class="sticker" id="5_1"></div>
+                <div class="sticker" id="5_2"></div>
+            </td>
+            <td class="face">
+                <div class="sticker" id="3_3"></div>
+                <div class="sticker" id="3_4"></div>
+                <div class="sticker" id="3_5"></div>
+                                
+                <div class="sticker" id="4_3"></div>
+                <div class="sticker" id="4_4"></div>
+                <div class="sticker" id="4_5"></div>
+                
+                <div class="sticker" id="5_3"></div>
+                <div class="sticker" id="5_4"></div>
+                <div class="sticker" id="5_5"></div>
+            </td>
+            <td class="face">
+                <div class="sticker" id="3_6"></div>
+                <div class="sticker" id="3_7"></div>
+                <div class="sticker" id="3_8"></div>
+                                
+                <div class="sticker" id="4_6"></div>
+                <div class="sticker" id="4_7"></div>
+                <div class="sticker" id="4_8"></div>
+                
+                <div class="sticker" id="5_6"></div>
+                <div class="sticker" id="5_7"></div>
+                <div class="sticker" id="5_8"></div>            
+            </td>
+            <td class="face">
+                <div class="sticker" id="3_9"></div>
+                <div class="sticker" id="3_10"></div>
+                <div class="sticker" id="3_11"></div>
+                                
+                <div class="sticker" id="4_9"></div>
+                <div class="sticker" id="4_10"></div>
+                <div class="sticker" id="4_11"></div>
+                
+                <div class="sticker" id="5_9"></div>
+                <div class="sticker" id="5_10"></div>
+                <div class="sticker" id="5_11"></div>             
+            </td>
+        </tr>
+        <tr>
+            <td class="face">
+                <div class="sticker" id="6_0"></div>
+                <div class="sticker" id="6_1"></div>
+                <div class="sticker" id="6_2"></div>
+                                
+                <div class="sticker" id="7_0"></div>
+                <div class="sticker" id="7_1"></div>
+                <div class="sticker" id="7_2"></div>
+                
+                <div class="sticker" id="8_0"></div>
+                <div class="sticker" id="8_1"></div>
+                <div class="sticker" id="8_2"></div>           
+            </td>
+        </tr>
+    </table>
+    
+    <table id="bar">
+        <tr>
+            <td id="colorsContainer">
+                <div class="sticker" id="c_0"></div>
+                <div class="sticker" id="c_1"></div>
+                <div class="sticker" id="c_2"></div>
+                <div class="sticker" id="c_3"></div>
+                <div class="sticker" id="c_4"></div>
+                <div class="sticker" id="c_5"></div>
+            </td>
+            <td id="buttonContainer">
+                <button id="button">solve</button>
+            </td>
+        </tr>
+    </table>
+    
+    <table id="solution">
+        <tr>
+            <td valign="top" id="moves"></td>
+            <td valign="top">
+                <div class="sticky" id="description"></div>
+            </td>
+        </tr>
+    </table>
+    
+    <script type="text/javascript" src="{% static "cube_solver_app/js/jquery-3.3.1.min.js" %}"></script>
+    <script type="text/javascript" src="{% static "cube_solver_app/js/cube_solver_app.js" %}"></script>
+</body>
+</html>
