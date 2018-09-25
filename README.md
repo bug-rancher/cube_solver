@@ -32,13 +32,13 @@ All cube layouts in solver are representation of the cube made by "unfolding box
 
 ## Screens
 Empty layout scheme:
-![screen 01](https://user-images.githubusercontent.com/42303256/46001425-83eba800-c0ab-11e8-870e-4337e0647e00.png)
+![screen 01](https://user-images.githubusercontent.com/42303256/46002002-1b9dc600-c0ad-11e8-999e-1f7df06ee30e.png)
 
 Layout scheme during input:
-![screen 02](https://user-images.githubusercontent.com/42303256/46001426-83eba800-c0ab-11e8-9687-432256ba3685.png)
+![screen 02](https://user-images.githubusercontent.com/42303256/46002003-1c365c80-c0ad-11e8-80e5-f2a8a880c498.png)
 
 Layout scheme with detected errors:
-![screen 03](https://user-images.githubusercontent.com/42303256/46001427-83eba800-c0ab-11e8-808e-7f460a87bd5c.png)
+![screen 03](https://user-images.githubusercontent.com/42303256/46002004-1c365c80-c0ad-11e8-8970-8c12bafa9d8a.png)
 
 Step by step solution:
-![screen 04](https://user-images.githubusercontent.com/42303256/46001428-83eba800-c0ab-11e8-9258-99d12f6948e0.png)
+![screen 04](https://user-images.githubusercontent.com/42303256/46002005-1c365c80-c0ad-11e8-8819-432c12b49749.png)
